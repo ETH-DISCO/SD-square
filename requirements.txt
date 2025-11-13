@@ -1,0 +1,4 @@
+lightning[extra]==2.5.1
+transformers==4.52.4
+wandb==0.19.9
+datasets==3.5.0
