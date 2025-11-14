@@ -6,6 +6,7 @@
 
 ## **Overview**
 SD² is a framework for **steering pretrained drafters** during **speculative decoding** to further increase alignment between drafter and verifier.
+This repo contains:
 - Evaluation tools  
 - Training scripts  
 - Synthetic dataset generation  
