@@ -1,6 +1,6 @@
 # **SD²: Steering Pretrained Drafters During Speculative Decoding**  
 ### *Official Repository for the SD² Paper*  
-[**📄 Read the Paper**](https://arxiv.org/abs/XXXX.XXXXX)
+[**📄 Read the Paper**](https://arxiv.org/abs/2511.09844)
 
 ---
 
