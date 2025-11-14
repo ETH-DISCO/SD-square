@@ -5,8 +5,7 @@
 ---
 
 ## **Overview**
-SD² is a framework for **steering pretrained drafters** during **speculative decoding**, enabling controllability without retraining the main model.  
-This repository contains:
+SD² is a framework for **steering pretrained drafters** during **speculative decoding** to further increase alignment between drafter and verifier.
 - Evaluation tools  
 - Training scripts  
 - Synthetic dataset generation  
