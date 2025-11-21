@@ -1,6 +1,14 @@
+<div align="center">
+
 # **SD²: Steering Pretrained Drafters During Speculative Decoding**  
-### *Official Repository for the SD² Paper*  
-[**📄 Read the Paper**](https://arxiv.org/abs/2511.09844)
+
+**Frédéric Berdoz · Peer Rheinboldt · Roger Wattenhofer**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2511.09844-b31b1b.svg)](https://arxiv.org/abs/2511.09844)
+
+Accepted at AAAI 2026
+
+</div>
 
 ---
 
@@ -16,12 +24,12 @@ This repo contains:
 ## Getting Started
 1. Create a new python environment with python version 3.12
 ```bash
-> python -m venv ./.venv
-> source ./.venv/bin/activate
+python -m venv ./.venv
+source ./.venv/bin/activate
 ```
 2. Install dependencies
 ```bash
-> pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 3. Note that you will have to login to [Hugging Face](https://huggingface.co/docs/huggingface_hub/en/guides/cli#hf-auth-login) and have access to the Llama Models. Additionally training requires [Weights & Biases](https://wandb.ai/site/)
 
@@ -30,9 +38,9 @@ This repo contains:
 1. Open `eval.py` and add the configurations you'd like to try out to `configs`
 2. Run the script
 ```bash
-> python eval.py --out_file 'eval_results.json'
+python eval.py --out_file 'eval_results.json'
 # We recommend piping output to a seperate file for later Evaluation
-> python eval.py --pattern "llama" --out_file "llama_results.json"  1> llama_out.log
+python eval.py --pattern "llama" --out_file "llama_results.json"  1> llama_out.log
 ```
 
 ---
@@ -40,11 +48,11 @@ This repo contains:
 1. Update `configs/experiment.yaml with correct data
 2. Generate a synthetic dataset
 ```bash
-> python create_synth_ds.py --bsz 128 --target_len 256  --use_ultrachat_prompts --model_name 'meta-llama/llama-3.1-8b-instruct'
+python create_synth_ds.py --bsz 128 --target_len 256  --use_ultrachat_prompts --model_name 'meta-llama/llama-3.1-8b-instruct'
 ```
 3. Run training script
 ```bash
-> python main.py fit --config configs/experiment.yaml \
+python main.py fit --config configs/experiment.yaml \
   --data.path ./data/synthetic/llama-3.1-8b-instruct-ultrachat-prompts \
   --data.bsz=12 \
   --data.n_val 3000 \
