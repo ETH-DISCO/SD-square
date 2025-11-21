@@ -6,7 +6,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.09844-b31b1b.svg)](https://arxiv.org/abs/2511.09844)
 
-Accepted at AAAI 2026
+Accepted at FPI @ NeurIPS 2025, SPIGM @ NeurIPS 2025 and at AAAI 2026
 
 </div>
 
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```bash
 python eval.py --out_file 'eval_results.json'
 # We recommend piping output to a seperate file for later Evaluation
-python eval.py --pattern "llama" --out_file "llama_results.json"  1> llama_out.log
+python eval.py --pattern "llama" --out_file "llama_results.json"  > llama_out.log
 ```
 
 ---
